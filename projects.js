@@ -26,11 +26,11 @@ window.MTK_PROJECTS = [
     tags: ["three.js", "видео-проекция", "карта Петрограда", "1917"],
   },
   {
-    num: "№29",
+    num: "№29–30",
     title: "Гражданская война",
     years: "1917–1922",
-    status: "soon",
-    url: "https://29.mtk.ostrov-vezeniya.ru",
+    status: "live",
+    url: "https://29-30.mtk.ostrov-vezeniya.ru",
     preview: "assets/previews/mtk29.jpg",
     summary:
       "Мультимедийная экспозиция о Гражданской войне: противоборствующие стороны, " +
@@ -42,7 +42,7 @@ window.MTK_PROJECTS = [
     title: "Арт-объекты наследия",
     years: "пять интерактивных объектов",
     status: "proto",
-    url: "https://38.mtk.ostrov-vezeniya.ru",
+    url: "https://38-42.mtk.ostrov-vezeniya.ru",
     preview: "assets/previews/mtk3842.jpg",
     summary:
       "Серия прототипов для пяти арт-объектов: №38 «Ленин на языках мира», №39 «Имени Ленина», " +
