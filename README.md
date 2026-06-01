@@ -26,9 +26,9 @@
 1. `git push origin main`.
 2. На сервере `/var/www/mtk` (git-checkout этого репо):
    `git fetch --all && git reset --hard origin/main` → `chmod -R a+rX /var/www/mtk`.
-3. Контейнер `mtk-web` (nginx:alpine, порт `8097:80`) подхватывает файлы bind-маунтом — рестарт не нужен.
+3. Контейнер `mtk-web` (nginx:alpine, порт `8099:80`) подхватывает файлы bind-маунтом — рестарт не нужен.
 
 `nginx.conf` и `docker-compose.yml` лежат в репозитории (versioned). nginx не отдаёт
 наружу `*.conf/*.yml/*.md` и dotfiles.
 
-Реверс-прокси `infrastructure-proxy-1` фронтит `mtk.ostrov-vezeniya.ru` (LE-серт) → `172.17.0.1:8097`.
+Реверс-прокси `infrastructure-proxy-1` фронтит `mtk.ostrov-vezeniya.ru` (LE-серт) → `172.17.0.1:8099`.
