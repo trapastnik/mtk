@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>МТК · Музейно-творческие комплексы — Музей В.И. Ленина</title>
+  <meta name="description" content="Витрина мультимедийных проектов МТК Музея В.И. Ленина, Санкт-Петербург.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23161B1E'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23D2B773' font-family='Georgia,serif'%3E%D0%9C%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- ПИН-ГЕЙТ — мягкая «занавеска» на входе -->
+  <div class="gate" id="gate" aria-label="Вход по ПИН-коду">
+    <div class="gate-inner">
+      <div class="gate-kicker">Музей В.И. Ленина</div>
+      <h1 class="gate-title">Музейно-творческие<br>комплексы</h1>
+      <p class="gate-hint">Введите ПИН-код для входа</p>
+      <form class="gate-form" id="gateForm" autocomplete="off">
+        <input class="gate-input" id="gateInput" inputmode="numeric" pattern="[0-9]*"
+               maxlength="8" aria-label="ПИН-код" autofocus>
+        <button class="gate-btn" type="submit" aria-label="Войти">→</button>
+      </form>
+      <div class="gate-err" id="gateErr" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <!-- ВИТРИНА -->
+  <main class="hub" id="hub" hidden>
+    <header class="head">
+      <div class="kicker" id="brandKicker"></div>
+      <h1 class="head-title" id="brandTitle"></h1>
+      <p class="head-sub" id="brandSub"></p>
+    </header>
+
+    <section class="grid" id="grid" aria-label="Проекты МТК"></section>
+
+    <footer class="foot">
+      <span id="footCount"></span>
+      <span class="foot-dot">·</span>
+      <span>Музей В.И. Ленина, Санкт-Петербург</span>
+    </footer>
+  </main>
+
+  <script src="./projects.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
