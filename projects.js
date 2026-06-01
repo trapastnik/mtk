@@ -16,7 +16,7 @@ window.MTK_PROJECTS = [
     num: "№24",
     title: "Ленин в октябре",
     years: "24–25 октября 1917",
-    status: "live",
+    status: "wip",
     url: "https://24.mtk.ostrov-vezeniya.ru",
     preview: "assets/previews/mtk24.jpg",
     summary:
@@ -29,7 +29,7 @@ window.MTK_PROJECTS = [
     num: "№29–30",
     title: "Гражданская война",
     years: "1917–1922",
-    status: "live",
+    status: "wip",
     url: "https://29-30.mtk.ostrov-vezeniya.ru",
     preview: "assets/previews/mtk29.jpg",
     summary:
