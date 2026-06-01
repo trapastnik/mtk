@@ -13,6 +13,7 @@
     live:  { cls: "badge-live",  label: "Открыт",   cardCls: "" },
     soon:  { cls: "badge-soon",  label: "Скоро",    cardCls: "is-soon" },
     proto: { cls: "badge-proto", label: "Прототип", cardCls: "" },
+    wip:   { cls: "badge-proto", label: "В работе", cardCls: "" },
   };
 
   // ---------- утилиты ----------

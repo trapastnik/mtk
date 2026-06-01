@@ -10,7 +10,7 @@ window.MTK_HUB = {
   brandSub: "Витрина мультимедийных экспозиций и арт-объектов",
 };
 
-// status: live | soon | proto
+// status: live (Открыт) | soon (Скоро, без ссылки) | proto (Прототип) | wip (В работе)
 window.MTK_PROJECTS = [
   {
     num: "№24",
@@ -41,7 +41,7 @@ window.MTK_PROJECTS = [
     num: "№38–42",
     title: "Арт-объекты наследия",
     years: "пять интерактивных объектов",
-    status: "proto",
+    status: "wip",
     url: "https://38-42.mtk.ostrov-vezeniya.ru",
     preview: "assets/previews/mtk3842.jpg",
     summary:
