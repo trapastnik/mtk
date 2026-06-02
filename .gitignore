@@ -4,3 +4,4 @@
 node_modules/
 tools/node_modules/
 tools/package-lock.json
+SECURITY-HANDOFF.md
