@@ -110,6 +110,16 @@ a { color: inherit; text-decoration: none; }
   padding: clamp(40px, 7vh, 88px) clamp(20px, 5vw, 64px) clamp(40px, 6vh, 72px);
 }
 
+/* кнопка возврата на странице проекта */
+.back {
+  display: inline-flex; align-items: center; gap: 0.4em;
+  font-family: var(--mono); font-size: clamp(11px, 1.2vw, 14px);
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--window); margin-bottom: clamp(20px, 3vh, 36px);
+  transition: color 0.2s, transform 0.2s;
+}
+.back:hover { color: var(--brass); transform: translateX(-3px); }
+
 .head { margin-bottom: clamp(32px, 6vh, 64px); }
 .kicker {
   font-family: var(--mono); font-weight: 600;

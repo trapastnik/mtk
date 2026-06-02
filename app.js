@@ -41,15 +41,24 @@
     if (s) s.textContent = HUB.brandSub || "";
   }
 
+  // внутренняя ссылка хаба (project.html…) — открываем в той же вкладке;
+  // внешний проект — в новой.
+  function isInternal(url) {
+    return /^project\.html/.test(url || "");
+  }
+
   function renderCard(p) {
     var st = STATUS[p.status] || STATUS.live;
     var soon = p.status === "soon";
+    var hasItems = p.items && p.items.length;
 
     var card = el(soon ? "div" : "a", "card " + st.cardCls);
     if (!soon) {
       card.href = p.url;
-      card.target = "_blank";
-      card.rel = "noopener";
+      if (!isInternal(p.url)) {
+        card.target = "_blank";
+        card.rel = "noopener";
+      }
     }
 
     // медиа
@@ -81,7 +90,12 @@
     }
 
     var cta = el("div", "card-cta");
-    cta.appendChild(el("span", null, soon ? "В разработке" : "Открыть проект"));
+    var ctaText = soon
+      ? "В разработке"
+      : hasItems
+      ? p.items.length + " " + plural(p.items.length, "материал", "материала", "материалов")
+      : "Открыть проект";
+    cta.appendChild(el("span", null, ctaText));
     if (!soon) cta.appendChild(el("span", "arrow", "→"));
     body.appendChild(cta);
 
