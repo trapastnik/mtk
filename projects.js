@@ -10,7 +10,7 @@ window.MTK_HUB = {
   brandSub: "Витрина мультимедийных экспозиций и арт-объектов",
 };
 
-// status: live (Открыт) | wip (В работе) | proto (Прототип) | video (Видеоролик, без ссылки) | soon (Скоро, без ссылки)
+// status: live (Открыт) | done (Сдан) | wip (В работе) | proto (Прототип) | video (Видеоролик, без ссылки) | soon (Скоро, без ссылки)
 // Экраны комплексов рассчитаны на 4K (3840×2160); на обычном мониторе открываются в масштабе.
 window.MTK_PROJECTS = [
   {
@@ -132,7 +132,7 @@ window.MTK_PROJECTS = [
     num: "№24",
     title: "Ленин в октябре",
     years: "24–25 октября 1917",
-    status: "wip",
+    status: "done",
     url: "https://24.mtk.ostrov-vezeniya.ru",
     preview: "assets/previews/mtk24.jpg",
     summary:
@@ -146,7 +146,7 @@ window.MTK_PROJECTS = [
     years: "1917–1922",
     status: "wip",
     url: "https://29.mtk.ostrov-vezeniya.ru/app/",
-    preview: "assets/previews/mtk29.jpg",
+    preview: "assets/previews/mtk29-app.jpg",
     summary:
       "Сенсорный комплекс: события по годам, противоборствующие силы, лица и территории " +
       "Гражданской войны — на карте и в хронике. Справки о персоналиях, анимированные карты.",

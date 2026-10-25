@@ -11,6 +11,7 @@
 
   var STATUS = {
     live:  { cls: "badge-live",  label: "Открыт",   cardCls: "" },
+    done:  { cls: "badge-live",  label: "Сдан",     cardCls: "" },
     soon:  { cls: "badge-soon",  label: "Скоро",    cardCls: "is-soon" },
     proto: { cls: "badge-proto", label: "Прототип", cardCls: "" },
     wip:   { cls: "badge-proto", label: "В работе", cardCls: "" },
