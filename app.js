@@ -14,6 +14,7 @@
     soon:  { cls: "badge-soon",  label: "Скоро",    cardCls: "is-soon" },
     proto: { cls: "badge-proto", label: "Прототип", cardCls: "" },
     wip:   { cls: "badge-proto", label: "В работе", cardCls: "" },
+    video: { cls: "badge-soon",  label: "Видеоролик", cardCls: "is-soon" },
   };
 
   // ---------- утилиты ----------
@@ -49,7 +50,7 @@
 
   function renderCard(p) {
     var st = STATUS[p.status] || STATUS.live;
-    var soon = p.status === "soon";
+    var soon = p.status === "soon" || !p.url;   // без ссылки — карточка не кликается (soon, video)
     var hasItems = p.items && p.items.length;
 
     var card = el(soon ? "div" : "a", "card " + st.cardCls);
@@ -90,7 +91,9 @@
     }
 
     var cta = el("div", "card-cta");
-    var ctaText = soon
+    var ctaText = p.cta
+      ? p.cta
+      : soon
       ? "В разработке"
       : hasItems
       ? p.items.length + " " + plural(p.items.length, "материал", "материала", "материалов")
@@ -111,7 +114,7 @@
 
     var count = document.getElementById("footCount");
     if (count) {
-      var live = PROJECTS.filter(function (p) { return p.status !== "soon"; }).length;
+      var live = PROJECTS.filter(function (p) { return !!p.url; }).length;
       var word = plural(PROJECTS.length, "проект", "проекта", "проектов");
       count.textContent = PROJECTS.length + " " + word + " · " + live + " доступно";
     }
