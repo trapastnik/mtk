@@ -58,7 +58,7 @@ window.MTK_PROJECTS = [
     years: "партии России 1898–1917",
     status: "wip",
     url: "project.html?id=12",
-    preview: "assets/previews/mtk12-square-1027.jpg",
+    preview: "assets/previews/mtk12-prod-1027b.jpg",
     summary:
       "Квадрат двух осей — экономика «лево — право» × власть «авторитаризм — демократия»: " +
       "посетитель листает годы 1898–1917 (часы, крутилка или таймлайн) и видит, как партии России " +
@@ -70,7 +70,7 @@ window.MTK_PROJECTS = [
         kicker: "Как в музее",
         desc: "Квадрат двух осей, как в музее.",
         url: "https://12.mtk.ostrov-vezeniya.ru/app/index.html",
-        preview: "assets/previews/mtk12-square-1027.jpg",
+        preview: "assets/previews/mtk12-prod-1027b.jpg",
         tags: ["экран"],
       },
       {
